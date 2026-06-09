@@ -1,5 +1,6 @@
 # Use a lightweight base image with the Java Runtime Environment (JRE)
-FROM openjdk:17-jdk-alpine
+FROM amazoncorretto:17-alpine
+
 
 # Set the working directory inside the container
 WORKDIR /app

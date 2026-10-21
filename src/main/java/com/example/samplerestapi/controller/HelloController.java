@@ -10,11 +10,6 @@ public class HelloController {
     @GetMapping(value = "/hello/{id}")
     public String helloController(@PathVariable("id") String id){
 
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         return "Hello Welcome : "+id;
     }
 }
